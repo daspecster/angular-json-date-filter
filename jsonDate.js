@@ -17,6 +17,10 @@ filters.filter('jsonDate', function() {
       return;
     }
     
+    if (!input) {
+        return '';
+    }
+
     var date = new Date(parseInt(input.substr(6)));
 
     // John Pedrie added Moment.js support
